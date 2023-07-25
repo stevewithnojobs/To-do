@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO-DO</title>
+         <link rel="stylesheet" href="css/styles.css">
+    </head>
+   
+    <body>
+        <div class="box" id="heading">
+        <h1><%=Today%></h1>
+        </div>
+        <div class="box">
+            <% for(i=0;i<neww.length;i++){ %>
+            <div class="item">
+                <input type="checkbox">
+                <p><%= neww[i] %></p>
+            </div>
+                
+            <% } %>
+
+            <form class="item"method="post">
+                <input name="job" type='text' placeholder="new item" autocomplete="off"><button type="submit">
+                    +
+                </button>
+            </form>
+        </div>
+            
+            
+
+       
+    
+    </body>
+</html>
